@@ -1,8 +1,14 @@
 # rpi_conky
 
-adding conky to raspberry pi
-> sudo apt-get install conky
+Improved version of Novaspirit's conky script. Newer versions of Conky won't play the old configs due to syntax errors, so this script has been corrected.
+Also, I (Botspot) have improved the colors, as the original colors did not look very good together.
 
-download the conkyrc file to home directory as .conkyrc
-> wget -O /home/pi/.conkyrc https://raw.githubusercontent.com/novaspirit/rpi_conky/master/rpi3_conkyrc
+## To Install:
 
+    sudo apt install -y conky
+    wget -O ~/.conkyrc https://raw.githubusercontent.com/Botspot/rpi_conky/master/conkyrc
+
+## To uninstall:
+
+    sudo apt purge -y conky
+    rm ~/.conkyrc
