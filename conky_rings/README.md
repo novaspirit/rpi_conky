@@ -2,7 +2,7 @@
 This is a conky appearance theme that uses a lua script to generate some animated ring graphs.  
 
 Screenshot:  
-![conky_screenshot](https://github.com/Botspot/rpi_conky/blob/master/conky_rings/conky_screenshot.png?raw=true)
+![conky_screenshot](https://github.com/Botspot/rpi_conky/blob/master/conky_rings/conky_screenshot.png?raw=true)  
 Phoenixbyrd from Pi Labs made the original theme, then I [added](https://github.com/Botspot/pi-apps/issues/687#issuecomment-869789919) some color.
 
 ## To install manually: 
