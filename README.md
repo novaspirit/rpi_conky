@@ -13,3 +13,15 @@ Also, I (Botspot) have improved the colors, as the original colors did not look 
 
     sudo apt purge -y conky
     rm ~/.conkyrc
+
+### Note about the network readout:
+By default, this conky configuration will assume the active network interface is `eth0`. If you are using WiFi, this needs changing before the network readout will work. In my Pi-Apps installation script, the `.conkyrc` file is edited if WiFi is detected.  
+The commands used to accomplish this is provided below, for your convenience:
+```
+#change eth0 to wlan0 in conky config if user is currently using WiFi
+interface="$(ip addr | awk '/state UP/ {print $2}' | tr -d ':' | head -n 1)"
+if [ ! -z "$interface" ];then
+  sed -i "s/eth0/$interface/g" ~/.conkyrc
+fi
+```
+I suppose if you installed conky manually, you can run the above code in your terminal. (Or you could just edit the `.conkyrc` file.)
